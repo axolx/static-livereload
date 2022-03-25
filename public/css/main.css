@@ -1,0 +1,18 @@
+:root {
+  font-size: 1em;
+  font-family: arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c6deba;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

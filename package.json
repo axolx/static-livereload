@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.0",
+    "livereload": "^0.9.3",
+    "sass": "^1.49.9"
+  },
+  "scripts": {
+    "sass:watch": "npx sass -w ./src/sass:./public/css",
+    "livereload": "npx livereload ./public",
+    "serve": "npx http-server public",
+    "watch": "npm run sass:watch & npm run livereload & npm run serve",
+    "lint": "npx markdownlint README.md && npx stylelint src/sass/** && prettier -c public/**"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.31.1",
+    "prettier": "^2.6.0",
+    "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard-scss",
+    "ignoreFiles": [
+      "**/*.html"
+    ]
+  }
+}
